@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Living at Lumpini 14 - Bangkok</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Lumpini 14</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#details">Details</a>
+            <a href="#location">Location</a>
+            <a href="#contact" class="cta-button">Contact</a>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <span class="subtitle">Luxury Living</span>
+            <h1>Bangkok Apartment</h1>
+            <p>Close to BTS Phron Pong</p>
+            <div class="price-tag">฿29,500 / Month</div>
+            <a href="#video-tour" class="hero-btn">Watch Video Tour</a>
+        </div>
+        <div class="hero-overlay"></div>
+    </header>
+
+    <section id="details" class="details-section">
+        <div class="container">
+            <div class="detail-card">
+                <i data-lucide="armchair"></i>
+                <h3>Fully Furnished</h3>
+                <p>Ready to move in with premium furniture and appliances.</p>
+            </div>
+            <div class="detail-card">
+                <i data-lucide="building"></i>
+                <h3>High Floor</h3>
+                <p>Breathtaking views of the Bangkok skyline from the top levels.</p>
+            </div>
+            <div class="detail-card">
+                <i data-lucide="train"></i>
+                <h3>BTS Phron Pong</h3>
+                <p>Excellent connectivity, just minutes away from the BTS station.</p>
+            </div>
+            <div class="detail-card">
+                <i data-lucide="coins"></i>
+                <h3>Great Value</h3>
+                <p>Exceptional luxury for approximately ~€800 (฿29,500).</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="video-tour" class="video-section">
+        <div class="container">
+            <h2 class="section-title">Video Tour</h2>
+            <div class="video-grid">
+                <div class="video-card">
+                    <h3>Night View</h3>
+                    <video controls poster="Photos Lumpiny 24/1758093887917.jpg">
+                        <!-- Using first image as poster for now -->
+                        <source src="Photos Lumpiny 24/VIDEO-2025-09-04-10-06-10.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-card">
+                    <h3>Day View</h3>
+                    <video controls poster="Photos Lumpiny 24/1758093920350.jpg">
+                        <!-- Using a night-ish looking image if possible, or just another one -->
+                        <source src="Photos Lumpiny 24/VIDEO-2025-09-04-10-07-30.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Residence Gallery</h2>
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Images will be loaded here via JS -->
+            </div>
+        </div>
+    </section>
+
+    <section id="location" class="location-section">
+        <div class="container">
+            <h2 class="section-title">Location</h2>
+            <p class="location-desc">Conveniently situated in a vibrant neighborhood.</p>
+            <div class="map-wrapper">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15503.746682855!2d100.564756!3d13.722425!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDQzJzIwLjciTiAxMDDCsDMzJzUzLjEiRQ!5e0!3m2!1sen!2sth!4v1625647560000!5m2!1sen!2sth"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="map-btn-container">
+                    <a href="https://maps.app.goo.gl/i7VMYPn4hyDMRisQ6" target="_blank" class="map-link-btn">Open in
+                        Google Maps <i data-lucide="external-link"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <h2>Interested?</h2>
+            <p>Contact us today to schedule a viewing.</p>
+            <div class="contact-info">
+                <a href="mailto:almaviva88@gmail.com" class="contact-btn">Email Us</a>
+                <p class="contact-email-text">almaviva88@gmail.com</p>
+            </div>
+            <p class="copyright">&copy; 2026 Lumpini 14 Residence. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
