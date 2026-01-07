@@ -1,0 +1,57 @@
+ANÁLISIS DETALLADO DEL SITIO WEB PISO BANGKOK
+
+1. RESUMEN GENERAL
+Esta es una "Landing Page" (página de aterrizaje) de una sola página diseñada para promocionar el alquiler de un apartamento de lujo en Lumpini 14, Bangkok. El diseño es moderno, limpio y "responsive" (adaptable a móviles), con un esquema de colores oscuros y elegantes (según CSS).
+
+2. UBICACIÓN FÍSICA DE LOS ARCHIVOS
+- Archivo Principal: `index.html` (Mandarina de la estructura).
+- Estilos Visuales: `styles.css`.
+- Lógica y Galería: `script.js`.
+- Carpeta de Medios: `Photos Lumpiny 24/`. Contiene todas las imágenes JPG y los videos MP4.
+
+3. ESTRUCTURA VISUAL Y CONTENIDO ESPECÍFICO (Sección por Sección)
+
+A. Barra de Navegación (Navbar)
+- Ubicación: Parte superior fija.
+- Contenido: Logotipo "Lumpini 14" y 5 enlaces: Home, Gallery, Details, Location, Contact.
+
+B. Cabecera (Hero Section)
+- Título Principal: "Bangkok Apartment".
+- Subtítulo: "Luxury Living".
+- Texto descriptivo: "Close to BTS Phron Pong" (Cerca del transporte BTS).
+- Precio destacado: "฿29,500 / Month".
+- Botón de acción: "Watch Video Tour".
+
+C. Sección de Detalles (Details)
+- Ubicación: Justo debajo de la cabecera.
+- Contenido: 4 Tarjetas informativas con iconos:
+  1. "Fully Furnished": "Ready to move in with premium furniture and appliances."
+  2. "High Floor": "Breathtaking views of the Bangkok skyline from the top levels."
+  3. "BTS Phron Pong": "Excellent connectivity, just minutes away from the BTS station."
+  4. "Great Value": "Exceptional luxury for approximately ~€800 (฿29,500)."
+
+D. Sección de Video (Video Tour)
+- Contenido: 2 Videos alojados localmente.
+  1. "Night View": Muestra la vista nocturna (Archivo: VIDEO-2025-09-04-10-06-10.mp4).
+  2. "Day View": Muestra la vista diurna (Archivo: VIDEO-2025-09-04-10-07-30.mp4).
+
+E. Galería de Imágenes (Gallery)
+- Funcionamiento: Se carga dinámicamente mediante `script.js`.
+- Cantidad: 9 Imágenes en total listadas en el código.
+- Nombres de archivo: Secuencia numérica comenzando por `1758093887917.jpg`.
+- Interacción: Al hacer clic, las imágenes se abren en un visor a pantalla completa (Lightbox).
+
+F. Ubicación (Location)
+- Contenido: Título "Location", descripción "Conveniently situated in a vibrant neighborhood.".
+- Elementos: Un mapa interactivo de Google Maps (iframe) incrustado y un botón para abrir en Google Maps externo.
+
+G. Pie de Página (Footer/Contact)
+- Ubicación: Fondo de la página.
+- Llamada a la acción: "Interested? Contact us today to schedule a viewing."
+- Datos de contacto: Botón de email y texto explícito "almaviva9@gmail.com".
+- Copyright: "© 2026 Lumpini 14 Residence".
+
+4. ASPECTOS TÉCNICOS
+- El sitio utiliza la librería "Lucide" para los iconos (sillón, edificio, tren, monedas).
+- Fuentes tipográficas: 'Outfit' y 'Playfair Display' desde Google Fonts.
+- Animaciones: Las secciones aparecen con un efecto de "fade-in" suave al hacer scroll hacia abajo.

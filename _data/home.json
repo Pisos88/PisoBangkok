@@ -1,0 +1,46 @@
+{
+  "hero": {
+    "subtitulo": "Luxury Living",
+    "titulo": "Bangkok Apartment",
+    "descripcion": "Close to BTS Phron Pong",
+    "precio": "฿29,500 / Month",
+    "boton_texto": "Watch Video Tour"
+  },
+  "caracteristicas": [
+    {
+      "icono": "armchair",
+      "titulo": "Fully Furnished",
+      "descripcion": "Ready to move in with premium furniture and appliances."
+    },
+    {
+      "icono": "building",
+      "titulo": "High Floor",
+      "descripcion": "Breathtaking views of the Bangkok skyline from the top levels."
+    },
+    {
+      "icono": "train",
+      "titulo": "BTS Phron Pong",
+      "descripcion": "Excellent connectivity, just minutes away from the BTS station."
+    },
+    {
+      "icono": "coins",
+      "titulo": "Great Value",
+      "descripcion": "Exceptional luxury for approximately ~€800 (฿29,500)."
+    }
+  ],
+  "videos": {
+    "titulo_seccion": "Video Tour",
+    "video1_titulo": "Night View",
+    "video2_titulo": "Day View"
+  },
+  "ubicacion": {
+    "titulo": "Location",
+    "descripcion": "Conveniently situated in a vibrant neighborhood.",
+    "google_maps_link": "https://maps.app.goo.gl/i7VMYPn4hyDMRisQ6"
+  },
+  "footer": {
+    "titulo": "Interested?",
+    "descripcion": "Contact us today to schedule a viewing.",
+    "boton_email": "Email Us"
+  }
+}

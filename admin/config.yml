@@ -1,0 +1,265 @@
+backend:
+  name: git-gateway
+  branch: main  # Cambia a 'master' si tu rama principal se llama así
+
+media_folder: "Photos Lumpiny 24"
+public_folder: "/Photos Lumpiny 24"
+
+# Configuración del idioma del panel
+locale: "es"
+
+collections:
+  # ===== CONFIGURACIÓN GENERAL DEL SITIO =====
+  - name: "configuracion"
+    label: "⚙️ Configuración General"
+    files:
+      - file: "_data/settings.json"
+        label: "Datos de Contacto y Configuración"
+        name: "settings"
+        fields:
+          - label: "📧 Email de Contacto"
+            name: "email"
+            widget: "string"
+            default: "almaviva9@gmail.com"
+            hint: "Email donde recibirás las consultas"
+          
+          - label: "📱 Teléfono de Contacto"
+            name: "telefono"
+            widget: "string"
+            required: false
+            hint: "Número de teléfono (opcional). Ejemplo: +34 612 345 678"
+          
+          - label: "📱 WhatsApp"
+            name: "whatsapp"
+            widget: "string"
+            required: false
+            hint: "Número de WhatsApp con código de país. Ejemplo: +34612345678"
+
+          - label: "🏠 Nombre del Edificio/Residencia"
+            name: "nombre_edificio"
+            widget: "string"
+            default: "Lumpini 14"
+          
+          - label: "📅 Año Copyright"
+            name: "year_copyright"
+            widget: "string"
+            default: "2026"
+
+  # ===== SEO =====
+  - name: "seo"
+    label: "🔍 SEO y Redes Sociales"
+    files:
+      - file: "_data/seo.json"
+        label: "Configuración SEO"
+        name: "seo"
+        fields:
+          - label: "🌐 URL del sitio web"
+            name: "site_url"
+            widget: "string"
+            default: "https://tudominio.com"
+            hint: "Tu dominio completo (ej: https://pisobangkok.com)"
+
+          - label: "📄 Título de la página (SEO)"
+            name: "title"
+            widget: "string"
+            default: "Luxury Apartment for Rent in Bangkok | Lumpini 14 Near BTS Phrom Phong"
+            hint: "Máximo 60 caracteres. Aparece en Google."
+
+          - label: "📝 Meta descripción"
+            name: "description"
+            widget: "text"
+            default: "Fully furnished luxury apartment at Lumpini 14, Bangkok. High floor with stunning city views, near BTS Phrom Phong station. ฿29,500/month (~€800). Available now!"
+            hint: "Máximo 160 caracteres. Aparece en Google debajo del título."
+
+          - label: "🏷️ Palabras clave"
+            name: "keywords"
+            widget: "string"
+            default: "Bangkok apartment, rent apartment Bangkok, Lumpini 14, BTS Phrom Phong, luxury condo Bangkok"
+            hint: "Separadas por comas"
+
+          - label: "🖼️ Imagen para redes sociales"
+            name: "og_image"
+            widget: "image"
+            default: "/Photos Lumpiny 24/1758093920350.jpg"
+            hint: "Imagen que aparece al compartir en Facebook, Twitter, WhatsApp"
+
+  # ===== PÁGINA PRINCIPAL =====
+  - name: "pagina_principal"
+    label: "🏠 Página Principal"
+    files:
+      - file: "_data/home.json"
+        label: "Contenido de la Página"
+        name: "home"
+        fields:
+          # --- HERO / CABECERA ---
+          - label: "🎯 Sección Hero (Cabecera)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - label: "Subtítulo pequeño"
+                name: "subtitulo"
+                widget: "string"
+                default: "Luxury Living"
+                hint: "Texto pequeño encima del título"
+              
+              - label: "Título Principal"
+                name: "titulo"
+                widget: "string"
+                default: "Bangkok Apartment"
+              
+              - label: "Descripción corta"
+                name: "descripcion"
+                widget: "string"
+                default: "Close to BTS Phron Pong"
+              
+              - label: "💰 Precio (con moneda)"
+                name: "precio"
+                widget: "string"
+                default: "฿29,500 / Month"
+                hint: "Ejemplo: ฿29,500 / Month o €800 / Mes"
+              
+              - label: "Texto del botón"
+                name: "boton_texto"
+                widget: "string"
+                default: "Watch Video Tour"
+
+          # --- TARJETAS DE CARACTERÍSTICAS ---
+          - label: "📋 Tarjetas de Características"
+            name: "caracteristicas"
+            widget: "list"
+            max: 4
+            fields:
+              - label: "Icono"
+                name: "icono"
+                widget: "select"
+                options:
+                  - { label: "Sillón (Amueblado)", value: "armchair" }
+                  - { label: "Edificio (Piso alto)", value: "building" }
+                  - { label: "Tren (Transporte)", value: "train" }
+                  - { label: "Monedas (Precio)", value: "coins" }
+                  - { label: "Wifi", value: "wifi" }
+                  - { label: "Coche (Parking)", value: "car" }
+                  - { label: "Piscina", value: "waves" }
+                  - { label: "Gimnasio", value: "dumbbell" }
+                  - { label: "Seguridad", value: "shield" }
+                  - { label: "Aire acondicionado", value: "snowflake" }
+              
+              - label: "Título"
+                name: "titulo"
+                widget: "string"
+              
+              - label: "Descripción"
+                name: "descripcion"
+                widget: "text"
+
+          # --- SECCIÓN DE VIDEOS ---
+          - label: "🎬 Sección de Videos"
+            name: "videos"
+            widget: "object"
+            fields:
+              - label: "Título de la sección"
+                name: "titulo_seccion"
+                widget: "string"
+                default: "Video Tour"
+              
+              - label: "Video 1 - Título"
+                name: "video1_titulo"
+                widget: "string"
+                default: "Night View"
+              
+              - label: "Video 2 - Título"
+                name: "video2_titulo"
+                widget: "string"
+                default: "Day View"
+
+          # --- SECCIÓN DE UBICACIÓN ---
+          - label: "📍 Sección de Ubicación"
+            name: "ubicacion"
+            widget: "object"
+            fields:
+              - label: "Título de la sección"
+                name: "titulo"
+                widget: "string"
+                default: "Location"
+              
+              - label: "Descripción"
+                name: "descripcion"
+                widget: "text"
+                default: "Conveniently situated in a vibrant neighborhood."
+              
+              - label: "Enlace a Google Maps"
+                name: "google_maps_link"
+                widget: "string"
+                default: "https://maps.app.goo.gl/i7VMYPn4hyDMRisQ6"
+                hint: "Enlace para el botón 'Abrir en Google Maps'"
+
+          # --- FOOTER / PIE DE PÁGINA ---
+          - label: "📝 Pie de Página (Contact)"
+            name: "footer"
+            widget: "object"
+            fields:
+              - label: "Título"
+                name: "titulo"
+                widget: "string"
+                default: "Interested?"
+              
+              - label: "Texto descriptivo"
+                name: "descripcion"
+                widget: "string"
+                default: "Contact us today to schedule a viewing."
+              
+          - label: "Texto del botón de email"
+            name: "boton_email"
+            widget: "string"
+            default: "Email Us"
+
+  # ===== GALERÍA DE FOTOS =====
+  - name: "galeria"
+    label: "🖼️ Galería de Fotos"
+    files:
+      - file: "_data/gallery.json"
+        label: "Gestionar Fotos"
+        name: "gallery"
+        fields:
+          - label: "📸 Fotos de la Galería"
+            name: "fotos"
+            widget: "list"
+            summary: "{{fields.alt}}"
+            fields:
+              - label: "Imagen"
+                name: "imagen"
+                widget: "image"
+                choose_url: false
+                hint: "Sube una foto o selecciona una existente"
+              
+              - label: "Descripción (alt)"
+                name: "alt"
+                widget: "string"
+                default: "Vista del apartamento"
+                hint: "Descripción breve de la foto (para accesibilidad)"
+
+          - label: "🎬 Video 1"
+            name: "video1"
+            widget: "object"
+            fields:
+              - label: "Archivo de video"
+                name: "src"
+                widget: "file"
+                default: "Photos Lumpiny 24/VIDEO-2025-09-04-10-06-10.mp4"
+              - label: "Imagen de portada"
+                name: "poster"
+                widget: "image"
+                default: "Photos Lumpiny 24/1758093887917.jpg"
+
+          - label: "🎬 Video 2"
+            name: "video2"
+            widget: "object"
+            fields:
+              - label: "Archivo de video"
+                name: "src"
+                widget: "file"
+                default: "Photos Lumpiny 24/VIDEO-2025-09-04-10-07-30.mp4"
+              - label: "Imagen de portada"
+                name: "poster"
+                widget: "image"
+                default: "Photos Lumpiny 24/1758093920350.jpg"

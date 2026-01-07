@@ -1,0 +1,12 @@
+# Robots.txt for Lumpini 14 Bangkok Apartment
+# https://tudominio.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://tudominio.com/sitemap.xml
+
+# Disallow admin area
+Disallow: /admin/
+Disallow: /_data/

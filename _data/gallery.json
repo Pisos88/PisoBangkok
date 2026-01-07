@@ -1,0 +1,48 @@
+{
+  "fotos": [
+    {
+      "imagen": "/Photos Lumpiny 24/1758093887917.jpg",
+      "alt": "Vista del apartamento 1"
+    },
+    {
+      "imagen": "/Photos Lumpiny 24/1758093893228.jpg",
+      "alt": "Vista del apartamento 2"
+    },
+    {
+      "imagen": "/Photos Lumpiny 24/1758093899605.jpg",
+      "alt": "Vista del apartamento 3"
+    },
+    {
+      "imagen": "/Photos Lumpiny 24/1758093904034.jpg",
+      "alt": "Vista del apartamento 4"
+    },
+    {
+      "imagen": "/Photos Lumpiny 24/1758093908709.jpg",
+      "alt": "Vista del apartamento 5"
+    },
+    {
+      "imagen": "/Photos Lumpiny 24/1758093920350.jpg",
+      "alt": "Vista del apartamento 6"
+    },
+    {
+      "imagen": "/Photos Lumpiny 24/1758093927362.jpg",
+      "alt": "Vista del apartamento 7"
+    },
+    {
+      "imagen": "/Photos Lumpiny 24/1758093928577.jpg",
+      "alt": "Vista del apartamento 8"
+    },
+    {
+      "imagen": "/Photos Lumpiny 24/1758093936938.jpg",
+      "alt": "Vista del apartamento 9"
+    }
+  ],
+  "video1": {
+    "src": "/Photos Lumpiny 24/VIDEO-2025-09-04-10-06-10.mp4",
+    "poster": "/Photos Lumpiny 24/1758093887917.jpg"
+  },
+  "video2": {
+    "src": "/Photos Lumpiny 24/VIDEO-2025-09-04-10-07-30.mp4",
+    "poster": "/Photos Lumpiny 24/1758093920350.jpg"
+  }
+}
