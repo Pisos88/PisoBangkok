@@ -3,7 +3,7 @@
     "subtitulo": "Luxury Living",
     "titulo": "Bangkok Apartment",
     "descripcion": "Close to BTS Phron Pong",
-    "precio": "฿29,500 / Month",
+    "precio": "฿28,500 / Month",
     "boton_texto": "Watch Video Tour"
   },
   "caracteristicas": [
@@ -42,5 +42,6 @@
     "titulo": "Interested?",
     "descripcion": "Contact us today to schedule a viewing.",
     "boton_email": "Email Us"
-  }
+  },
+  "boton_email": "almaviva9@gmail.com"
 }
